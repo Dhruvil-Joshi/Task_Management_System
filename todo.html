@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Taks</title>
+    <link rel="icon" type="image/png" href="post-it.png">
+    <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+    <div class="container">
+        <div id="todo-task">
+            <div id="titlebar">
+                <p id="tasktitle">Add Your Task Details Here : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="sticky-notes.png" alt="" id="icon"></p>
+            </div>
+            <div id="maincontent">
+                <p class="inputfields">Name : &nbsp;&nbsp;&nbsp;<input type="text" name="name" id="name" class="data"></p>
+                <br>
+                <p class="inputfields">Title &nbsp;&nbsp;&nbsp;: &nbsp;&nbsp;&nbsp;<input type="text" name="task" id="titleoftask" class="data"></p>
+                <br>
+                <p class="inputfields">Descritpion &nbsp;&nbsp;&nbsp;: &nbsp;&nbsp;&nbsp;<input type="text" name="task" id="descriptionoftask" class="data"></p>
+                <br>
+                <p class="inputfields">User Access &nbsp;&nbsp;&nbsp; : &nbsp;&nbsp;<input type="radio" name="userpost" checked id="normaluser" value="User">&nbsp;User</p> 
+                <p class="inputfields">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="userpost" id="admin" value="Admin">&nbsp;Admin</p> 
+                <br>
+                <p class="inputfields">Task Progress : &nbsp;&nbsp;<input type="radio" name="taskprogress" checked id="to-do" value="To-Do">&nbsp;To-Do</p> 
+                <p class="inputfields">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="taskprogress" id="progress" value="In-Progress">&nbsp;In-Progress</p> 
+                <p class="inputfields">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="taskprogress" id="completed" value="Completed">&nbsp;Completed</p> 
+                <br>
+                <p class="inputfields">Date&nbsp;&nbsp;&nbsp; : &nbsp;&nbsp;&nbsp;&nbsp;<input type="date" class="deadline" id="deadlinedate"></p> 
+                <br>
+                <p class="inputfields">Time&nbsp;&nbsp;&nbsp; : &nbsp;&nbsp;&nbsp;&nbsp;<input type="time" class="deadline" id="deadlinetime"></p> 
+                <br>
+                <button onclick="newtask()" id="submit">&#10003;</button>         
+            </div>  
+         </div>
+    </div>
+    <script src="task.js"></script>
+</body>
+</html>

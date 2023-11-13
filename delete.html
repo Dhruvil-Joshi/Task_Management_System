@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Task</title>
+    <link rel="icon" type="image/png" href="post-it.png">
+    <link rel="stylesheet" href="delete.css">
+</head>
+<body>
+    <div class="container">
+        <div id="todo-task">
+            <div id="titlebar">
+                <p id="tasktitle">Enter The Details Here : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="sticky-notes.png" alt="" id="icon"></p>
+            </div>
+            <div id="maincontent">
+                <p class="inputfields">Name : &nbsp;&nbsp;&nbsp;<input type="text" name="name" id="deletename" class="data"></p>
+                <br>
+                <p class="inputfields">User Access &nbsp;&nbsp;&nbsp; : &nbsp;&nbsp;<input type="radio" name="userpost" checked id="deletenormaluser" value="User">&nbsp;User</p> 
+                <p class="inputfields">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="userpost" id="deleteadmin" value="Admin">&nbsp;Admin</p> 
+                <br><p class="inputfields">Index of Task &nbsp;&nbsp;: &nbsp;&nbsp;&nbsp;<input type="number" name="index" id="deleteindex" class="data"></p>
+                <br>
+                <button onclick="deletetask()" id="submit">&#10003;</button>         
+            </div>  
+         </div>
+    </div>
+    <script src="delete.js"></script>
+</body>
+</html>

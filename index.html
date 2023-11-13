@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management System</title>
+    <link rel="icon" type="image/png" href="post-it.png">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <div id="Titlebar">
+            <h3>Task Management System   <img src="post-it.png" alt="" id="icon"></h3>
+        </div>
+        <div id="mainbox">
+            <div id="Titlebarmenu">
+                <h3>Mantain details of your tasks here :  </h3>
+            </div>
+            <div id="content">
+                <p id="details"></p>
+            </div>
+        </div>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button onclick="submittask()" class="btn">Add Task</button>
+    <button onclick="deleteopen()" class="btn">Delete Task</button>
+    <button onclick="updateopen()" class="btn">Update Task</button>
+    <button onclick="filteropen()" class="btn">Filter Task</button>
+<!-- </div><script src="project.js"></script> -->
+<script src="task.js"></script>
+<script src="filter.js"></script>
+<script src="print.js"></script>
+<script src="delete.js"></script>
+<script src="update.js"></script>
+</body>
+</html>

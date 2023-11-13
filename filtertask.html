@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter Options</title>
+    <link rel="icon" type="image/png" href="post-it.png">
+    <link rel="stylesheet" href="filtertask.css">
+</head>
+<body>
+    <div class="container">
+        <div id="todo-task">
+            <div id="titlebar">
+                <p id="tasktitle">Select how to filter the task : &nbsp;&nbsp;&nbsp;<img src="sticky-notes.png" alt="" id="icon"></p>
+            </div>
+            <div id="maincontent">
+                <p class="inputfields"><button id="filtertodo" class="filterbtn" onclick="todoopen()">To-Do</button><button id="filterduration" class="filterbtn" onclick="durationopen()">Duration</button></p>
+                <p class="inputfields"><button id="filtercompleted" class="filterbtn" onclick="completedopen()">Complete</button></p>
+                  <p class="inputfields"><button id="filterprogress" class="filterbtn" onclick="progressopen()">In Progress</button><button id="filterperson" class="filterbtn" onclick="personopen()">Assigned Person</button>
+                    </p>     
+            </div>  
+         </div>
+    </div>
+    <script src="filter.js"></script>
+    <!-- <script src="task.js"></script> -->
+</body>
+</html>

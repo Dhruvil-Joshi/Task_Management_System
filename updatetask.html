@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Tasks</title>
+    <link rel="icon" type="image/png" href="post-it.png">
+    <link rel="stylesheet" href="update.css">
+</head>
+<body>
+    <div class="container">
+        <div id="todo-task">
+            <div id="titlebar">
+                <p id="tasktitle">Update The Task Details Here : &nbsp;&nbsp;&nbsp;<img src="sticky-notes.png" alt="" id="icon"></p>
+            </div>
+            <div id="maincontent">
+                <p class="inputfields">Name of Updater : &nbsp;&nbsp;&nbsp;<input type="text" name="name" id="updatename" class="data"></p>
+                <br>
+                <p class="inputfields">Index of Task &nbsp;&nbsp;: &nbsp;&nbsp;&nbsp;<input type="number" name="index" id="updateindex" class="data"></p>
+                <br>
+                <p class="inputfields">Title &nbsp;&nbsp;&nbsp;: &nbsp;&nbsp;&nbsp;<input type="text" name="task" id="updatetitleoftask" class="data"></p>
+                <br>
+                <p class="inputfields">Descritpion &nbsp;&nbsp;&nbsp;: &nbsp;&nbsp;&nbsp;<input type="text" name="task" id="updatedescriptionoftask" class="data"></p>
+                <br>
+                <p class="inputfields">Post of Updater &nbsp;&nbsp;&nbsp; : &nbsp;&nbsp;<input type="radio" name="userpost" checked id="updatenormaluser" value="User">&nbsp;User</p> 
+                <p class="inputfields"> &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="userpost" id="updateadmin" value="Admin">&nbsp;Admin</p> 
+                <br>
+                <p class="inputfields">Task Progress : &nbsp;&nbsp;<input type="radio" name="taskprogress" checked id="updateto-do" value="To-Do">&nbsp;To-Do</p> 
+                <p class="inputfields">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="taskprogress" id="updateprogress" value="Progress">&nbsp;Progress</p> 
+                <p class="inputfields">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="taskprogress" id="updatecompleted" value="Completed">&nbsp;Completed</p> 
+                <br>
+                <p class="inputfields">Date&nbsp;&nbsp;&nbsp; : &nbsp;&nbsp;&nbsp;&nbsp;<input type="date" class="deadline" id="updatedeadlinedate"></p> 
+                <br>
+                <p class="inputfields">Time&nbsp;&nbsp;&nbsp; : &nbsp;&nbsp;&nbsp;&nbsp;<input type="time" class="deadline" id="updatedeadlinetime"></p> 
+                <br>
+                <button onclick="updatetask()" id="submit">&#10003;</button>         
+            </div>  
+         </div>
+    </div>
+    <script src="update.js"></script>
+    <!-- <script src="task.js"></script> -->
+</body>
+</html>
