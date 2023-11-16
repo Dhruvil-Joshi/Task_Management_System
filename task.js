@@ -75,11 +75,7 @@ function newtask()
         mynewArrayOfObjects.push(newtask)
         console.log(mynewArrayOfObjects)
         localStorage.setItem("Task_Data",JSON.stringify(mynewArrayOfObjects))
-        function openback()
-        {
-          window.open("index.html","_self")
-        }
-        setInterval(openback, 500);
+        window.open("index.html","_self")
       }
     }
 }
